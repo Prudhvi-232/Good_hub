@@ -7,15 +7,15 @@ import { MapPin, Calendar, Award, Heart } from "lucide-react";
 
 const Profile = () => {
   const achievements = [
-    { title: "Gold Helper", description: "Completed 45 missions", icon: Award },
-    { title: "Community Leader", description: "Organized 10 events", icon: Heart },
-    { title: "Blood Donor", description: "Donated 5 times", icon: Heart },
+    { title: "Platinum Donor", description: "₹5L+ verified contributions", icon: Award },
+    { title: "80G Champion", description: "15 tax-eligible donations", icon: Award },
+    { title: "Impact Maker", description: "Helped 500+ beneficiaries", icon: Heart },
   ];
 
   const recentActivity = [
-    { action: "Organized Community Food Drive", points: 250, date: "2 days ago" },
-    { action: "Teaching Session at Local School", points: 150, date: "1 week ago" },
-    { action: "Blood Donation Camp", points: 200, date: "2 weeks ago" },
+    { action: "₹2,50,000 Donation to Old Age Home (80G Verified)", points: 2500, date: "2 days ago" },
+    { action: "Sponsored Education Program - ₹1,00,000", points: 1000, date: "1 week ago" },
+    { action: "Medical Equipment Donation - ₹75,000", points: 750, date: "2 weeks ago" },
   ];
 
   return (
@@ -50,19 +50,19 @@ const Profile = () => {
           </div>
         </Card>
 
-        {/* Stats */}
+          {/* Stats */}
         <div className="mb-6 grid gap-4 md:grid-cols-3">
           <Card className="p-6 text-center">
-            <p className="text-3xl font-bold text-primary">1,247</p>
-            <p className="text-sm text-muted-foreground">Total Points</p>
+            <p className="text-3xl font-bold text-primary">₹8,50,000</p>
+            <p className="text-sm text-muted-foreground">Total Contributions</p>
           </Card>
           <Card className="p-6 text-center">
-            <p className="text-3xl font-bold text-secondary">23</p>
-            <p className="text-sm text-muted-foreground">Missions Completed</p>
+            <p className="text-3xl font-bold text-secondary">15</p>
+            <p className="text-sm text-muted-foreground">80G Verified Donations</p>
           </Card>
           <Card className="p-6 text-center">
-            <p className="text-3xl font-bold text-accent">12</p>
-            <p className="text-sm text-muted-foreground">Events Organized</p>
+            <p className="text-3xl font-bold text-accent">₹2,55,000</p>
+            <p className="text-sm text-muted-foreground">Tax Benefit Claimed</p>
           </Card>
         </div>
 

@@ -7,9 +7,9 @@ import { Plus, Zap, Heart, Building2 } from "lucide-react";
 
 const Help = () => {
   const missions = [
-    { title: "Feed stray animals", points: 50, difficulty: "Easy", icon: Heart, description: "Provide food to stray dogs or cats in your area" },
-    { title: "Teach underprivileged kids", points: 150, difficulty: "Medium", icon: Zap, description: "Spend 2 hours teaching any subject to kids in need" },
-    { title: "Organize blood drive", points: 250, difficulty: "Hard", icon: Building2, description: "Coordinate a blood donation camp in your community" },
+    { title: "Sponsor Child Education", points: 500, difficulty: "₹25,000", icon: Heart, description: "Fund complete education for one child through verified NGO. 80G tax benefit applicable." },
+    { title: "Medical Equipment Donation", points: 800, difficulty: "₹50,000+", icon: Zap, description: "Donate medical equipment to government hospitals. Full tax exemption under Section 80G." },
+    { title: "Rural Healthcare Camp", points: 1000, difficulty: "₹1,00,000+", icon: Building2, description: "Sponsor comprehensive healthcare camp for 200+ people. Verified NGO partnership with tax benefits." },
   ];
 
   const organizations = [
@@ -19,8 +19,9 @@ const Help = () => {
   ];
 
   const helpRequests = [
-    { author: "Local Shelter", need: "Need volunteers for weekend meal service", urgency: "High", image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?w=400&auto=format&fit=crop" },
-    { author: "Community Center", need: "Looking for books and educational materials", urgency: "Medium", image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400&auto=format&fit=crop" },
+    { author: "Sunshine Old Age Home (80G Verified)", need: "Seeking ₹2,00,000 for medical equipment and monthly supplies for 50 elderly residents", urgency: "High", image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&auto=format&fit=crop" },
+    { author: "Education For All Trust (Verified NGO)", need: "Need ₹5,00,000 to sponsor education for 100 underprivileged children - Full tax benefit under 80G", urgency: "High", image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop" },
+    { author: "HealthCare Foundation (80G Registered)", need: "Requesting ₹3,00,000 for organizing free medical camps in 5 rural villages", urgency: "Medium", image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&auto=format&fit=crop" },
   ];
 
   return (

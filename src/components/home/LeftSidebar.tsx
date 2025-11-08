@@ -28,14 +28,14 @@ const LeftSidebar = () => {
         </div>
       </Card>
 
-      {/* Donation History */}
+        {/* Donation History */}
       <Card className="p-4">
-        <h3 className="mb-3 font-semibold text-card-foreground">Recent Help</h3>
+        <h3 className="mb-3 font-semibold text-card-foreground">Recent Contributions</h3>
         <div className="space-y-3">
           {[
-            { action: "Fed a dog", points: 50, badge: "Easy" },
-            { action: "Donated clothes", points: 100, badge: "Medium" },
-            { action: "Organized food drive", points: 200, badge: "Hard" },
+            { action: "₹50,000 to NGO", points: 500, badge: "Tax Eligible" },
+            { action: "Blood Donation Camp", points: 300, badge: "Verified" },
+            { action: "Community Food Drive", points: 400, badge: "Tax Eligible" },
           ].map((item, i) => (
             <div key={i} className="flex items-center justify-between">
               <div>
@@ -44,11 +44,11 @@ const LeftSidebar = () => {
               </div>
               <Badge
                 variant={
-                  item.badge === "Easy"
+                  item.badge === "Tax Eligible"
                     ? "default"
-                    : item.badge === "Medium"
+                    : item.badge === "Verified"
                     ? "secondary"
-                    : "destructive"
+                    : "outline"
                 }
               >
                 {item.badge}

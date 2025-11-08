@@ -37,13 +37,13 @@ const RightSidebar = () => {
       <Card className="p-4">
         <div className="mb-3 flex items-center gap-2">
           <TrendingUp className="h-5 w-5 text-accent" />
-          <h3 className="font-semibold text-card-foreground">Recent Opportunities</h3>
+          <h3 className="font-semibold text-card-foreground">Verified Opportunities</h3>
         </div>
         <div className="space-y-3">
           {[
-            { task: "Feed stray animals", points: 50, difficulty: "Easy" },
-            { task: "Teach underprivileged kids", points: 150, difficulty: "Medium" },
-            { task: "Organize blood drive", points: 250, difficulty: "Hard" },
+            { task: "Sponsor Education (₹25,000)", points: 500, difficulty: "80G Eligible" },
+            { task: "Healthcare Support Fund", points: 400, difficulty: "Tax Benefit" },
+            { task: "Community Development", points: 350, difficulty: "Verified NGO" },
           ].map((task, i) => (
             <div key={i} className="rounded-lg border border-border p-3 transition-all hover:border-primary">
               <div className="flex items-start justify-between">
