@@ -15,7 +15,8 @@ const Home = () => {
       likes: 342,
       comments: 67,
       image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&auto=format&fit=crop",
-      badge: "80G Verified"
+      badge: "Individual Donor",
+      verification: "80g" as const
     },
     {
       author: "TechCorp Foundation",
@@ -27,7 +28,8 @@ const Home = () => {
       likes: 892,
       comments: 156,
       image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format&fit=crop",
-      badge: "Corporate Partner"
+      badge: "Corporate Partner",
+      verification: "80g" as const
     },
     {
       author: "Dr. Rajesh Kumar",
@@ -39,7 +41,8 @@ const Home = () => {
       likes: 534,
       comments: 89,
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop",
-      badge: "Healthcare Hero"
+      badge: "Healthcare Hero",
+      verification: "kyc" as const
     },
     {
       author: "Green Earth Initiative",
@@ -51,7 +54,8 @@ const Home = () => {
       likes: 678,
       comments: 112,
       image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&auto=format&fit=crop",
-      badge: "Environment Champion"
+      badge: "Environment Champion",
+      verification: "80g" as const
     },
   ];
 

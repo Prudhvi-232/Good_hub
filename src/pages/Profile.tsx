@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Calendar, Award, Heart } from "lucide-react";
+import VerificationBadge from "@/components/verification/VerificationBadge";
 
 const Profile = () => {
   const achievements = [
@@ -32,8 +33,11 @@ const Profile = () => {
             </Avatar>
             <div className="mt-4 flex items-start justify-between">
               <div>
-                <h1 className="text-2xl font-bold text-card-foreground">John Doe</h1>
-                <p className="text-muted-foreground">Community Helper</p>
+                <div className="mb-2 flex items-center gap-2">
+                  <h1 className="text-2xl font-bold text-card-foreground">John Doe</h1>
+                  <VerificationBadge level="kyc" size="md" />
+                </div>
+                <p className="text-muted-foreground">Verified Individual Donor</p>
                 <div className="mt-2 flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <MapPin className="h-4 w-4" />

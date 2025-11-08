@@ -1,8 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Heart, MessageCircle, Share2, Award } from "lucide-react";
+import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import VerificationBadge, { VerificationLevel } from "@/components/verification/VerificationBadge";
 
 interface FeedPostProps {
   author: string;
@@ -15,6 +16,7 @@ interface FeedPostProps {
   comments: number;
   image?: string;
   badge?: string;
+  verification?: VerificationLevel;
 }
 
 const FeedPost = ({
@@ -28,6 +30,7 @@ const FeedPost = ({
   comments,
   image,
   badge,
+  verification = "none",
 }: FeedPostProps) => {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-md">
@@ -40,12 +43,8 @@ const FeedPost = ({
         <div className="flex-1">
           <div className="flex items-center gap-2">
             <h4 className="font-semibold text-card-foreground">{author}</h4>
-            {badge && (
-              <Badge variant="secondary" className="gap-1">
-                <Award className="h-3 w-3" />
-                {badge}
-              </Badge>
-            )}
+            <VerificationBadge level={verification} size="sm" />
+            {badge && <Badge variant="secondary">{badge}</Badge>}
           </div>
           <p className="text-sm text-muted-foreground">{timestamp}</p>
         </div>
