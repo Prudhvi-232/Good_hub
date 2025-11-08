@@ -1,73 +1,184 @@
-# Welcome to your Lovable project
+# 🌍 Good_hub – Where Doing Good Pays Back
 
-## Project info
+> A social helping and verification platform that connects people, verified NGOs, and organisations to make social service transparent, rewarding, and officially verifiable.
 
-**URL**: https://lovable.dev/projects/ef6a9e09-f9d0-4e37-87d5-6dc754cfd517
+---
 
-## How can I edit this code?
+## 🧭 Vision
 
-There are several ways of editing your application.
+**Good_hub** aims to create a digital ecosystem where individuals, companies, and verified organisations can come together to **help others, donate, and volunteer** — all while earning official recognition and government-backed tax benefits under **Section 80G (India)**.
 
-**Use Lovable**
+The platform promotes **transparency, gamification, and verified impact tracking** to encourage more people to participate in community welfare.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ef6a9e09-f9d0-4e37-87d5-6dc754cfd517) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Key Features
 
-**Use your preferred IDE**
+### 🏠 Home Feed  
+- Personalized feed showing help posts only from **users you follow** and a few **top verified helpers**.  
+- Posts include pictures, captions, and proof of completed help/donations.  
+- Left sidebar: Profile summary + contribution history.  
+- Right sidebar: Leaderboards + upcoming help opportunities.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 💰 Help / Donate Page  
+- Post blogs or requests for help (like “Feed a dog”, “Support old-age home”).  
+- Explore **missions** (Easy/Medium/Hard) to earn **GoodPoints**.  
+- Donate to **verified NGOs** (money, food, clothes, or services).  
+- All donations are tracked and verified for **tax benefit proof**.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🏆 Leaderboard  
+- See top helpers globally or among your friends.  
+- Ranked based on **GoodPoints** earned from verified activities.
 
-Follow these steps:
+### 📍 Location Page  
+- Interactive **map view** showing areas that need help and nearby NGOs/trusts.  
+- Click to **navigate using Google Maps**.  
+- Displays verified organisations with their contact info.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 👤 Profile Page  
+- Shows user details, badges, certificates, and help history.  
+- Auto-generated **verification certificate** for each completed help.  
+- Option to share achievements publicly.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 💬 Messaging  
+- Private chat system between helpers and organisations.  
+- Used for coordination, proof exchange, or help verification.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🧰 Technology Stack
+
+| Component | Technology |
+|------------|-------------|
+| **Frontend** | React + TailwindCSS |
+| **Backend** | FastAPI / Django REST Framework |
+| **Database** | PostgreSQL |
+| **Authentication** | JWT + KYC Verification |
+| **AI/Automation** | Fraud detection & document verification |
+| **Deployment** | Docker + AWS / Vercel |
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to set up **Good_hub** locally 👇
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/Good_hub.git
+cd Good_hub
+````
+
+### 2️⃣ Install Frontend (React)
+
+```bash
+cd client
+npm install
+npm start
 ```
 
-**Edit a file directly in GitHub**
+### 3️⃣ Setup Backend (FastAPI or Django)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+cd server
+pip install -r requirements.txt
+# For FastAPI
+uvicorn main:app --reload
+# OR for Django
+python manage.py runserver
+```
 
-**Use GitHub Codespaces**
+### 4️⃣ Setup Database
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+# PostgreSQL setup example
+psql -U postgres
+CREATE DATABASE goodhub;
+```
 
-## What technologies are used for this project?
+### 5️⃣ Environment Variables
 
-This project is built with:
+Create a `.env` file in your `server/` directory:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+DATABASE_URL=postgresql://username:password@localhost/goodhub
+JWT_SECRET=your_secret_key
+CLOUD_API_KEY=your_api_key
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/ef6a9e09-f9d0-4e37-87d5-6dc754cfd517) and click on Share -> Publish.
+## 🧾 Example Use Case
 
-## Can I connect a custom domain to my Lovable project?
+> A government employee maintaining an old-age home can register it on **Good_hub**.
+> After verification, all donations and expenses are recorded digitally.
+> The platform generates a verified **tax-deduction certificate (80G proof)** that helps reduce taxable income — turning good deeds into official, measurable impact.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🧠 AI Modules (Optional Enhancements)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+* 🕵️ Fraud detection for false donation claims
+* 📄 Automatic document verification (PAN, Trust Deed, etc.)
+* 🤖 Recommendation system for nearby help tasks
+
+---
+
+## 🎯 Future Enhancements
+
+* Mobile app (Flutter)
+* Digital ID for verified NGOs
+* API integration for CSR tracking
+* AI-powered help suggestion system
+
+---
+
+## 📊 Impact
+
+Good_hub promotes **verified, transparent, and rewarding social work** by combining technology, government compliance, and social networking principles.
+
+It bridges the gap between **helpers** and **those who need help**, making doing good both **visible and valuable**.
+
+---
+
+## 🖋️ Tagline
+
+> ❤️ **Good_hub – Where Doing Good Pays Back.**
+
+---
+
+## 📸 Screenshots (To Add Later)
+
+* 🏠 Home Page
+* 💰 Help/Donate Page
+* 🏆 Leaderboard
+* 📍 Location Map
+* 👤 Profile Page
+
+*(Add screenshots after UI completion)*
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!
+If you'd like to add features or fix bugs:
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/xyz`)
+3. Commit changes (`git commit -m 'Add xyz'`)
+4. Push to branch (`git push origin feature/xyz`)
+5. Open a Pull Request 🎉
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – free to use and modify with attribution.
+
+---
+
+### 👨‍💻 Developed by
+
+**Prudhvi** and Team
+---
